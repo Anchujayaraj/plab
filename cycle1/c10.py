@@ -1,8 +1,11 @@
-a=int(input("Enter a number:"))
-b=int(input("Enter the second number:"))
-if(b == 0):
-    print("0")
+a=int(input("enter the first number : "))
+b=int(input("enter the second number:  "))
+gcd=0
+if(a<b):
+    small=a
 else:
-    print("The gcd of ",a," and",b,"is ",a % b)
-print( end="")
-
+    small=b
+for i in range(1,small+1):
+    if((a%i==0) and (b%i==0)):
+        gcd=i
+print("gcd of ",a," and ",b," is ",gcd)
