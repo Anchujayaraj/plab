@@ -1,15 +1,15 @@
 class Bankaccount:
-    def _init_(self):
+    def __init__(self):
         self.accno=10253515421
         self.name="Anju"
         self.acctype="savings"
         self.balance=0
     def deposit(self):
-        amount=int(input("enter the amount to be deposited: "))
+        amount=int(input("enter the amount to deposit:\t"))
         self.balance+=amount
         print("Amount succsfully deposited")
     def withdraw(self):
-        amount=int(input("enter the amount to withdraw: "))
+        amount=int(input("enter the amount to withdraw:\t"))
         if self.balance>=amount:
             self.balance-=amount
             print("succesfully withdrawn")
